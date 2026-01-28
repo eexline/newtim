@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoldSignals — Trading Signals</title>
+    <meta name="theme-color" content="#0b0b0f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="noise" aria-hidden="true"></div>
+      <div class="glow glow-1" aria-hidden="true"></div>
+      <div class="glow glow-2" aria-hidden="true"></div>
+    </div>
+
+    <header class="header">
+      <div class="header__left">
+        <div class="logo" aria-label="GoldSignals">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 80 60" width="24" height="18" role="presentation" focusable="false" aria-hidden="true">
+              <defs>
+                <linearGradient id="candleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ffd65a;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ffb700;stop-opacity:1" />
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <!-- Первая свеча (низкая) -->
+              <g transform="translate(14, 38)">
+                <!-- Тело свечи -->
+                <rect x="0" y="0" width="12" height="18" rx="2" fill="url(#candleGrad)" filter="url(#glow)" />
+                <!-- Фитиль -->
+                <line x1="6" y1="0" x2="6" y2="-4" stroke="#ffd65a" stroke-width="1.5" stroke-linecap="round" filter="url(#glow)" />
+              </g>
+              
+              <!-- Вторая свеча (средняя) -->
+              <g transform="translate(34, 28)">
+                <!-- Тело свечи -->
+                <rect x="0" y="0" width="12" height="28" rx="2" fill="url(#candleGrad)" filter="url(#glow)" />
+                <!-- Фитиль -->
+                <line x1="6" y1="0" x2="6" y2="-4" stroke="#ffd65a" stroke-width="1.5" stroke-linecap="round" filter="url(#glow)" />
+              </g>
+              
+              <!-- Третья свеча (высокая) -->
+              <g transform="translate(54, 18)">
+                <!-- Тело свечи -->
+                <rect x="0" y="0" width="12" height="38" rx="2" fill="url(#candleGrad)" filter="url(#glow)" />
+                <!-- Фитиль -->
+                <line x1="6" y1="0" x2="6" y2="-4" stroke="#ffd65a" stroke-width="1.5" stroke-linecap="round" filter="url(#glow)" />
+              </g>
+            </svg>
+          </span>
+          <span class="logo__text">KELIAN SIGNAL</span>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <button id="langBtn" class="langBtn" type="button" aria-label="Сменить язык">
+          <img src="svg/ru.svg" alt="RU" class="langBtn__flag" id="langFlag" />
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel" aria-label="Signal controls">
+        <div class="panel__header">
+          <h1 id="title" class="title">Сигналы для трейдинга</h1>
+          <p id="subtitle" class="subtitle">
+            Выберите рынок, пару и таймфрейм — и получите сигнал.
+          </p>
+        </div>
+
+        <div class="controls">
+          <div class="row">
+            <div class="segmented" role="tablist" aria-label="Market switch">
+              <button
+                id="marketForex"
+                class="segmented__btn is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+              >
+                Forex
+              </button>
+              <button
+                id="marketOtc"
+                class="segmented__btn"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                OTC
+              </button>
+            </div>
+          </div>
+
+          <div class="row row--two">
+            <button id="pairBtn" class="selectLike" type="button">
+              <span class="selectLike__label" id="pairLabel">Валютная пара</span>
+              <span class="selectLike__value">
+                <span class="selectLike__flags" id="pairValueFlags"></span>
+                <span id="pairValue">EUR/USD</span>
+              </span>
+              <span class="selectLike__chev" aria-hidden="true">▾</span>
+            </button>
+
+            <button id="tfBtn" class="selectLike" type="button">
+              <span class="selectLike__label" id="tfLabel">Таймфрейм</span>
+              <span class="selectLike__value" id="tfValue">M5</span>
+              <span class="selectLike__chev" aria-hidden="true">▾</span>
+            </button>
+          </div>
+
+          <div class="row">
+            <button id="getSignalBtn" class="cta" type="button">
+              <span class="cta__shine" aria-hidden="true"></span>
+              <span class="cta__content">
+                <span id="getSignalText">Получить сигнал</span>
+                <span class="cta__loader" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="result" aria-label="Signal result">
+        <div id="signalCard" class="card is-hidden" role="status" aria-live="polite">
+          <div class="card__glow" aria-hidden="true"></div>
+          <div class="card__top">
+            <div class="pill">
+              <span class="pill__k" id="pillMarketK">Рынок</span>
+              <span class="pill__v" id="pillMarketV">Forex</span>
+            </div>
+            <div class="pill">
+              <span class="pill__k" id="pillAccuracyK">Точность</span>
+              <span class="pill__v" id="pillAccuracyV">—</span>
+            </div>
+          </div>
+
+          <div class="card__mid">
+            <div class="pair">
+              <div class="pair__k" id="pairK">Пара</div>
+              <div class="pair__v">
+                <span class="pair__flags" id="pairOutFlags"></span>
+                <span id="pairOut">EUR/USD</span>
+              </div>
+            </div>
+            <div class="pair">
+              <div class="pair__k" id="tfK">Таймфрейм</div>
+              <div class="pair__v" id="tfOut">M5</div>
+            </div>
+          </div>
+
+          <div class="card__bottom">
+            <div id="signalBadge" class="signalBadge signalBadge--buy">
+              <span class="signalBadge__v" id="signalV">BUY</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="emptyState" class="empty">
+          <div class="empty__icon" aria-hidden="true">⬤</div>
+          <div class="empty__text" id="emptyText">
+            Нажмите «Получить сигнал», чтобы увидеть карточку.
+          </div>
+        </div>
+        <div id="loadingState" class="loading is-hidden">
+          <div class="loading__spinner">
+            <div class="loading__ring"></div>
+            <div class="loading__ring"></div>
+            <div class="loading__ring"></div>
+          </div>
+          <div class="loading__text" id="loadingText">Анализ рынка...</div>
+          <div class="loading__progress">
+            <div class="loading__progressBar" id="loadingProgress"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pair Modal -->
+    <div id="pairModal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="pairModalTitle">
+      <div class="modal__backdrop" data-close="pair"></div>
+      <div class="modal__panel">
+        <div class="modal__header">
+          <div class="modal__title" id="pairModalTitle">Выбор валютной пары</div>
+          <button class="iconBtn" type="button" data-close="pair" aria-label="Закрыть">✕</button>
+        </div>
+
+        <div class="modal__search">
+          <input id="pairSearch" class="input" type="text" placeholder="Поиск (например EUR)" autocomplete="off" />
+        </div>
+
+        <div id="pairList" class="modal__list" role="listbox" aria-label="Pairs"></div>
+      </div>
+    </div>
+
+    <!-- Timeframe Modal -->
+    <div id="tfModal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="tfModalTitle">
+      <div class="modal__backdrop" data-close="tf"></div>
+      <div class="modal__panel">
+        <div class="modal__header">
+          <div class="modal__title" id="tfModalTitle">Выбор таймфрейма</div>
+          <button class="iconBtn" type="button" data-close="tf" aria-label="Закрыть">✕</button>
+        </div>
+
+        <div id="tfList" class="modal__list" role="listbox" aria-label="Timeframes"></div>
+      </div>
+    </div>
+
+    <!-- Language Modal -->
+    <div id="langModal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="langModalTitle">
+      <div class="modal__backdrop" data-close="lang"></div>
+      <div class="modal__panel">
+        <div class="modal__header">
+          <div class="modal__title" id="langModalTitle">Выбор языка</div>
+          <button class="iconBtn" type="button" data-close="lang" aria-label="Закрыть">✕</button>
+        </div>
+
+        <div id="langList" class="modal__list" role="listbox" aria-label="Languages"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
