@@ -1,1 +1,878 @@
-function _0x49e2(_0x14c822,_0x2a0bb0){_0x14c822=_0x14c822-0xcf;const _0x23c617=_0x23c6();let _0x49e282=_0x23c617[_0x14c822];return _0x49e282;}(function(_0x187338,_0x280097){const _0x476810=_0x49e2,_0x2ec3da=_0x187338();while(!![]){try{const _0x218c0d=parseInt(_0x476810(0x18b))/0x1*(parseInt(_0x476810(0x194))/0x2)+-parseInt(_0x476810(0x1c8))/0x3*(parseInt(_0x476810(0x11a))/0x4)+-parseInt(_0x476810(0x145))/0x5*(parseInt(_0x476810(0x17c))/0x6)+-parseInt(_0x476810(0x15e))/0x7+parseInt(_0x476810(0x11b))/0x8*(parseInt(_0x476810(0x133))/0x9)+parseInt(_0x476810(0x1ca))/0xa+-parseInt(_0x476810(0x1c5))/0xb*(parseInt(_0x476810(0x18f))/0xc);if(_0x218c0d===_0x280097)break;else _0x2ec3da['push'](_0x2ec3da['shift']());}catch(_0x48469f){_0x2ec3da['push'](_0x2ec3da['shift']());}}}(_0x23c6,0x27bee),((()=>{const _0x46445b=_0x49e2,_0x541aaf={'langBtn':document[_0x46445b(0x1f8)](_0x46445b(0x135)),'langFlag':document['getElementById'](_0x46445b(0x1db)),'langModal':document[_0x46445b(0x1f8)](_0x46445b(0x1df)),'langList':document[_0x46445b(0x1f8)](_0x46445b(0xec)),'langModalTitle':document[_0x46445b(0x1f8)]('langModalTitle'),'marketForex':document['getElementById'](_0x46445b(0x1ea)),'marketOtc':document[_0x46445b(0x1f8)](_0x46445b(0x148)),'pairBtn':document[_0x46445b(0x1f8)](_0x46445b(0xea)),'tfBtn':document[_0x46445b(0x1f8)](_0x46445b(0x12a)),'pairLabel':document[_0x46445b(0x1f8)]('pairLabel'),'tfLabel':document[_0x46445b(0x1f8)](_0x46445b(0x208)),'pairValue':document[_0x46445b(0x1f8)]('pairValue'),'pairValueFlags':document[_0x46445b(0x1f8)](_0x46445b(0x152)),'pairOutFlags':document[_0x46445b(0x1f8)](_0x46445b(0x14d)),'tfValue':document[_0x46445b(0x1f8)](_0x46445b(0x109)),'getSignalBtn':document[_0x46445b(0x1f8)]('getSignalBtn'),'getSignalText':document[_0x46445b(0x1f8)](_0x46445b(0x1a6)),'signalCard':document[_0x46445b(0x1f8)]('signalCard'),'emptyState':document[_0x46445b(0x1f8)](_0x46445b(0x13d)),'loadingState':document['getElementById'](_0x46445b(0x1f1)),'loadingText':document['getElementById'](_0x46445b(0x140)),'loadingProgress':document[_0x46445b(0x1f8)]('loadingProgress'),'pillMarketK':document[_0x46445b(0x1f8)](_0x46445b(0xfb)),'pillMarketV':document[_0x46445b(0x1f8)]('pillMarketV'),'pillAccuracyK':document['getElementById'](_0x46445b(0x1b2)),'pillAccuracyV':document[_0x46445b(0x1f8)](_0x46445b(0x146)),'pairK':document[_0x46445b(0x1f8)](_0x46445b(0x17e)),'tfK':document['getElementById'](_0x46445b(0x134)),'pairOut':document[_0x46445b(0x1f8)](_0x46445b(0x13a)),'tfOut':document[_0x46445b(0x1f8)]('tfOut'),'signalBadge':document[_0x46445b(0x1f8)](_0x46445b(0x19a)),'signalV':document['getElementById'](_0x46445b(0x159)),'title':document['getElementById'](_0x46445b(0x123)),'subtitle':document[_0x46445b(0x1f8)]('subtitle'),'emptyText':document[_0x46445b(0x1f8)](_0x46445b(0x1e4)),'pairModal':document[_0x46445b(0x1f8)](_0x46445b(0x13f)),'tfModal':document[_0x46445b(0x1f8)]('tfModal'),'pairSearch':document['getElementById']('pairSearch'),'pairList':document[_0x46445b(0x1f8)]('pairList'),'tfList':document[_0x46445b(0x1f8)](_0x46445b(0x1e7)),'pairModalTitle':document[_0x46445b(0x1f8)](_0x46445b(0xd3)),'tfModalTitle':document['getElementById'](_0x46445b(0x1a8))},_0x343b12=[{'code':'ru','name':_0x46445b(0x11d),'flag':'ru'},{'code':'en','name':_0x46445b(0x180),'flag':'us'},{'code':'br','name':'Português','flag':'br'},{'code':'uz','name':'O\x27zbek','flag':'uz'},{'code':'ar','name':'العربية','flag':'sa'},{'code':'hi','name':_0x46445b(0x111),'flag':'in'}];function _0x37df07(){const _0x3e35ac=_0x46445b,_0x4ae924=localStorage[_0x3e35ac(0x175)](_0x3e35ac(0x172));return _0x4ae924&&_0x343b12[_0x3e35ac(0x122)](_0x55501c=>_0x55501c['code']===_0x4ae924)?_0x4ae924:'en';}const _0x10821c={'ru':{'title':_0x46445b(0x1e3),'subtitle':_0x46445b(0x1f3),'market':_0x46445b(0x206),'accuracy':_0x46445b(0x1af),'pair':'Пара','timeframe':'Таймфрейм','pairPick':_0x46445b(0x19f),'tfPick':'Выбор\x20таймфрейма','pairLabel':_0x46445b(0xed),'tfLabel':'Таймфрейм','getSignal':_0x46445b(0x1fd),'signal':'Сигнал','buy':_0x46445b(0x195),'sell':'Продавать','empty':_0x46445b(0xe5),'hint':_0x46445b(0xd4),'searchPh':_0x46445b(0x11f),'analyzing':'Анализ\x20рынка...','calculating':_0x46445b(0x19c),'finalizing':_0x46445b(0xf8),'langPick':_0x46445b(0x10b),'wait':'Wait'},'en':{'title':_0x46445b(0x191),'subtitle':_0x46445b(0x10c),'market':'Market','accuracy':_0x46445b(0x1b5),'pair':_0x46445b(0x1eb),'timeframe':_0x46445b(0xcf),'pairPick':_0x46445b(0x1a0),'tfPick':_0x46445b(0x202),'pairLabel':_0x46445b(0x19e),'tfLabel':'Timeframe','getSignal':_0x46445b(0x182),'signal':'Signal','buy':_0x46445b(0x1a1),'sell':_0x46445b(0x1e8),'empty':_0x46445b(0xf0),'hint':_0x46445b(0x1e2),'searchPh':_0x46445b(0x184),'analyzing':_0x46445b(0x14c),'calculating':_0x46445b(0x137),'finalizing':_0x46445b(0x1f5),'langPick':_0x46445b(0x1c7),'wait':'Wait'},'br':{'title':'Sinais\x20de\x20negociação','subtitle':'Escolha\x20mercado,\x20par\x20e\x20período\x20—\x20e\x20receba\x20um\x20sinal.','market':_0x46445b(0x1a5),'accuracy':_0x46445b(0xeb),'pair':_0x46445b(0x125),'timeframe':_0x46445b(0x19b),'pairPick':'Escolher\x20par\x20de\x20moedas','tfPick':_0x46445b(0x1f7),'pairLabel':_0x46445b(0x144),'tfLabel':_0x46445b(0x19b),'getSignal':_0x46445b(0xf5),'signal':_0x46445b(0x15b),'buy':_0x46445b(0x17f),'sell':_0x46445b(0x167),'empty':'Clique\x20em\x20\x27Obter\x20sinal\x27\x20para\x20ver\x20o\x20cartão.','hint':_0x46445b(0xe0),'searchPh':_0x46445b(0x171),'analyzing':_0x46445b(0x204),'calculating':_0x46445b(0x179),'finalizing':_0x46445b(0x16a),'langPick':'Escolher\x20idioma','wait':_0x46445b(0x201)},'uz':{'title':_0x46445b(0x189),'subtitle':_0x46445b(0x1ed),'market':_0x46445b(0x103),'accuracy':_0x46445b(0xd6),'pair':_0x46445b(0x1c3),'timeframe':'Vaqt\x20oralig\x27i','pairPick':_0x46445b(0x1a3),'tfPick':_0x46445b(0xfd),'pairLabel':'Valyuta\x20juftligi','tfLabel':_0x46445b(0x1d8),'getSignal':_0x46445b(0x114),'signal':_0x46445b(0x1d9),'buy':_0x46445b(0x102),'sell':_0x46445b(0x1ff),'empty':_0x46445b(0x154),'hint':_0x46445b(0xdb),'searchPh':_0x46445b(0x143),'analyzing':_0x46445b(0x177),'calculating':_0x46445b(0x207),'finalizing':_0x46445b(0x1ce),'langPick':_0x46445b(0xde),'wait':_0x46445b(0xd2)},'ar':{'title':_0x46445b(0x1f2),'subtitle':'اختر\x20السوق\x20والزوج\x20والإطار\x20الزمني\x20—\x20واحصل\x20على\x20إشارة.','market':'السوق','accuracy':_0x46445b(0x1ef),'pair':_0x46445b(0x199),'timeframe':_0x46445b(0x20a),'pairPick':_0x46445b(0x13b),'tfPick':_0x46445b(0x1ec),'pairLabel':_0x46445b(0x115),'tfLabel':_0x46445b(0x20a),'getSignal':_0x46445b(0x12d),'signal':_0x46445b(0x1e6),'buy':_0x46445b(0x127),'sell':_0x46445b(0x1e5),'empty':'انقر\x20على\x20\x27الحصول\x20على\x20إشارة\x27\x20لعرض\x20البطاقة.','hint':'مولد\x20تجريبي.\x20قم\x20بتوصيل\x20backend/API\x20للإشارات\x20الحقيقية.','searchPh':_0x46445b(0x141),'analyzing':_0x46445b(0xe3),'calculating':'حساب\x20الإشارة...','finalizing':_0x46445b(0x1bd),'langPick':_0x46445b(0x157),'wait':_0x46445b(0x105)},'hi':{'title':'ट्रेडिंग\x20सिग्नल','subtitle':_0x46445b(0x124),'market':_0x46445b(0x1a2),'accuracy':_0x46445b(0x18c),'pair':'जोड़ी','timeframe':_0x46445b(0x153),'pairPick':_0x46445b(0x197),'tfPick':_0x46445b(0x147),'pairLabel':_0x46445b(0x1b8),'tfLabel':_0x46445b(0x153),'getSignal':_0x46445b(0x132),'signal':_0x46445b(0x160),'buy':_0x46445b(0xee),'sell':_0x46445b(0x16d),'empty':'कार्ड\x20देखने\x20के\x20लिए\x20\x27सिग्नल\x20प्राप्त\x20करें\x27\x20पर\x20क्लिक\x20करें।','hint':_0x46445b(0x13e),'searchPh':_0x46445b(0x13c),'analyzing':_0x46445b(0x12b),'calculating':'सिग्नल\x20की\x20गणना...','finalizing':_0x46445b(0x116),'langPick':_0x46445b(0x1f4),'wait':_0x46445b(0x117)}},_0x128013={'lang':_0x37df07(),'market':_0x46445b(0x16f),'pair':_0x46445b(0x174),'tf':'1M'},_0x22bad4={};function _0x219c5f(_0x27d48){const _0x15d676=_0x46445b,_0x22aa9e=parseInt(_0x27d48);if(_0x27d48[_0x15d676(0x108)]('S'))return _0x22aa9e*0x3e8;else{if(_0x27d48['includes']('M'))return _0x22aa9e*0x3c*0x3e8;else{if(_0x27d48[_0x15d676(0x108)]('H'))return _0x22aa9e*0x3c*0x3c*0x3e8;else{if(_0x27d48[_0x15d676(0x108)]('D'))return _0x22aa9e*0x18*0x3c*0x3c*0x3e8;}}}return 0xea60;}function _0x40426f(_0x368abb,_0x8a6863){const _0x501a35=_0x46445b;return _0x8a6863===_0x501a35(0x1dc)?_0x368abb+_0x501a35(0x1c2):_0x368abb;}function _0xf224f(_0x3bdb28,_0x5c3074){const _0x215827=_0x40426f(_0x3bdb28,_0x5c3074);if(!_0x22bad4[_0x215827])return 0x0;const _0x2d6c79=_0x22bad4[_0x215827]-Date['now']();return _0x2d6c79>0x0?_0x2d6c79:0x0;}function _0xb33e8c(_0x13ff8c,_0x10077e,_0x18a0fb){const _0xd8d37e=_0x46445b,_0x1cb93b=_0x40426f(_0x13ff8c,_0x10077e),_0x42e666=_0x219c5f(_0x18a0fb);_0x22bad4[_0x1cb93b]=Date[_0xd8d37e(0x136)]()+_0x42e666;}function _0x23f3ea(_0x4ae33f){const _0x49d654=_0x46445b,_0x234925=Math[_0x49d654(0x100)](_0x4ae33f/0x3e8);if(_0x234925<0x3c)return _0x234925+'s';const _0x543845=Math[_0x49d654(0x151)](_0x234925/0x3c),_0x512438=_0x234925%0x3c;return _0x512438>0x0?_0x543845+'m\x20'+_0x512438+'s':_0x543845+'m';}const _0x1ec5ee=['EUR/USD',_0x46445b(0x15f),'USD/JPY',_0x46445b(0x161),_0x46445b(0xda),_0x46445b(0x178),'NZD/USD',_0x46445b(0x1e1),_0x46445b(0xff),_0x46445b(0x1ae),_0x46445b(0x14e),_0x46445b(0x1e9),'EUR/AUD',_0x46445b(0x170),_0x46445b(0x1c4),_0x46445b(0xf1),_0x46445b(0xfc),_0x46445b(0x150),_0x46445b(0x14a),_0x46445b(0x162),_0x46445b(0x131),_0x46445b(0x1aa),_0x46445b(0x17d),_0x46445b(0x1d6),_0x46445b(0xf2),_0x46445b(0xef),'GBP/RUB','RUB/JPY',_0x46445b(0x17b),_0x46445b(0x10a),_0x46445b(0x1ba),_0x46445b(0x113),_0x46445b(0x1be),_0x46445b(0x12f),_0x46445b(0x130),_0x46445b(0x1d4),_0x46445b(0x1fa),_0x46445b(0x101),'CAD/INR',_0x46445b(0x1d5),'EUR/BRL',_0x46445b(0xe9),'BRL/JPY',_0x46445b(0x169),'USD/SAR',_0x46445b(0x166),_0x46445b(0xd8),_0x46445b(0xd5),_0x46445b(0x156),_0x46445b(0x1bb)],_0x1f0ffa=['1M','3M','5M',_0x46445b(0x118),'30M'],_0x104026=['5S',_0x46445b(0x11c),_0x46445b(0x1b7),'1M','3M','5M','15M'];function _0x4fcfb2(){return _0x128013['market']==='Forex'?_0x1f0ffa:_0x104026;}const _0x25fe6a={'EUR':'eu','USD':'us','GBP':'gb','JPY':'jp','CHF':'ch','AUD':'au','CAD':'ca','NZD':'au','RUB':'ru','INR':'in','BRL':'br','SAR':'sa','UZS':'uz'};function _0x36b9d1(_0x2b7e29){const _0x53f853=_0x46445b,_0x1ba213=_0x25fe6a[_0x2b7e29]||'us';return _0x53f853(0x1f0)+_0x1ba213+'.svg';}function _0x31fa69(_0x22115a){const _0x43c56f=_0x46445b,[_0x5d6850,_0x4ffb1c]=_0x22115a[_0x43c56f(0x1b9)]('/');return{'base':_0x36b9d1(_0x5d6850),'quote':_0x36b9d1(_0x4ffb1c)};}function _0x40f9ce(_0x36a776){const _0x4d5935=_0x46445b;return _0x10821c[_0x128013[_0x4d5935(0x1c1)]][_0x36a776]??_0x36a776;}function _0x2f4c02(_0x283f8e){const _0x260a7e=_0x46445b;_0x128013[_0x260a7e(0x1c1)]=_0x283f8e,localStorage[_0x260a7e(0x107)](_0x260a7e(0x172),_0x283f8e);const _0x2037cd=_0x343b12[_0x260a7e(0x14f)](_0x58694e=>_0x58694e[_0x260a7e(0x15c)]===_0x283f8e);_0x2037cd&&_0x541aaf[_0x260a7e(0x1db)]&&(_0x541aaf[_0x260a7e(0x1db)]['src']=_0x260a7e(0x1f0)+_0x2037cd[_0x260a7e(0x1a4)]+_0x260a7e(0x1cd),_0x541aaf[_0x260a7e(0x1db)][_0x260a7e(0x163)]=_0x2037cd['code'][_0x260a7e(0x120)]()),document[_0x260a7e(0x17a)][_0x260a7e(0x1c1)]=_0x283f8e,_0x541aaf[_0x260a7e(0x123)]['textContent']=_0x40f9ce(_0x260a7e(0x123)),_0x541aaf[_0x260a7e(0x1b0)]['textContent']=_0x40f9ce(_0x260a7e(0x1b0)),_0x541aaf[_0x260a7e(0xfb)][_0x260a7e(0x1c6)]=_0x40f9ce('market'),_0x541aaf[_0x260a7e(0x1b2)][_0x260a7e(0x1c6)]=_0x40f9ce(_0x260a7e(0x158)),_0x541aaf[_0x260a7e(0x17e)][_0x260a7e(0x1c6)]=_0x40f9ce(_0x260a7e(0x15a)),_0x541aaf[_0x260a7e(0x134)][_0x260a7e(0x1c6)]=_0x40f9ce(_0x260a7e(0x18e)),_0x541aaf[_0x260a7e(0x186)][_0x260a7e(0x1c6)]=_0x40f9ce(_0x260a7e(0x186)),_0x541aaf[_0x260a7e(0x208)]['textContent']=_0x40f9ce(_0x260a7e(0x208)),_0x541aaf['getSignalText'][_0x260a7e(0x1c6)]=_0x40f9ce(_0x260a7e(0x18d)),_0x541aaf[_0x260a7e(0x1e4)]['textContent']=_0x40f9ce(_0x260a7e(0x187)),_0x541aaf[_0x260a7e(0xd3)]['textContent']=_0x40f9ce('pairPick'),_0x541aaf[_0x260a7e(0x1a8)][_0x260a7e(0x1c6)]=_0x40f9ce('tfPick'),_0x541aaf['langModalTitle']['textContent']=_0x40f9ce(_0x260a7e(0x1bc)),_0x541aaf[_0x260a7e(0x128)][_0x260a7e(0x198)]=_0x40f9ce('searchPh'),_0x53c9ea(_0x541aaf[_0x260a7e(0x128)][_0x260a7e(0x10f)]||''),_0x32c6d3(),_0x513890();}function _0x1006cd(_0x368bbf){const _0x1ab0a3=_0x46445b;_0x128013['market']=_0x368bbf;const _0x28c67c=_0x368bbf===_0x1ab0a3(0x16f);_0x541aaf[_0x1ab0a3(0x1ea)][_0x1ab0a3(0xe2)]['toggle'](_0x1ab0a3(0x129),_0x28c67c),_0x541aaf[_0x1ab0a3(0x148)][_0x1ab0a3(0xe2)]['toggle']('is-active',!_0x28c67c),_0x541aaf[_0x1ab0a3(0x1ea)][_0x1ab0a3(0x183)](_0x1ab0a3(0xd1),String(_0x28c67c)),_0x541aaf[_0x1ab0a3(0x148)][_0x1ab0a3(0x183)](_0x1ab0a3(0xd1),String(!_0x28c67c));const _0x260f78=_0x4fcfb2();!_0x260f78[_0x1ab0a3(0x108)](_0x128013['tf'])&&(_0x128013['tf']=_0x260f78[0x0],_0x541aaf[_0x1ab0a3(0x109)][_0x1ab0a3(0x1c6)]=_0x128013['tf']),_0x117fca(),!_0x541aaf['pairModal'][_0x1ab0a3(0xe2)][_0x1ab0a3(0x1ad)](_0x1ab0a3(0x164))&&_0x53c9ea(_0x541aaf[_0x1ab0a3(0x128)][_0x1ab0a3(0x10f)]||''),!_0x541aaf[_0x1ab0a3(0x149)][_0x1ab0a3(0xe2)][_0x1ab0a3(0x1ad)](_0x1ab0a3(0x164))&&_0x32c6d3();}function _0x109b99(_0x49c741){const _0x250331=_0x46445b;return _0x128013['market']===_0x250331(0x1dc)?_0x49c741+_0x250331(0x1c2):_0x49c741;}function _0x7e4d2d(_0x4a179d,_0x48998c){const _0x5dede7=_0x46445b,_0x400660=_0x31fa69(_0x48998c);_0x4a179d[_0x5dede7(0x176)]=_0x5dede7(0x12c)+_0x400660['base']+'\x22\x20alt=\x22\x22\x20class=\x22flag\x20flag--round\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x400660[_0x5dede7(0xe7)]+'\x22\x20alt=\x22\x22\x20class=\x22flag\x20flag--round\x22\x20/>\x0a\x20\x20\x20\x20';}function _0x117fca(){const _0x149c77=_0x46445b,_0x1b2f17=_0x109b99(_0x128013['pair']);_0x541aaf[_0x149c77(0xe1)][_0x149c77(0x1c6)]=_0x1b2f17,_0x541aaf[_0x149c77(0x13a)][_0x149c77(0x1c6)]=_0x1b2f17,_0x7e4d2d(_0x541aaf[_0x149c77(0x152)],_0x128013[_0x149c77(0x15a)]),_0x7e4d2d(_0x541aaf[_0x149c77(0x14d)],_0x128013['pair']);}function _0xa091f1(_0x25523a){const _0x4d6204=_0x46445b;let _0x156691;if(_0x25523a===_0x4d6204(0x15a))_0x156691=_0x541aaf[_0x4d6204(0x13f)];else{if(_0x25523a==='tf')_0x156691=_0x541aaf['tfModal'];else _0x25523a===_0x4d6204(0x1c1)&&(_0x156691=_0x541aaf[_0x4d6204(0x1df)]);}if(!_0x156691)return;_0x156691['classList']['remove'](_0x4d6204(0x164)),document[_0x4d6204(0x112)][_0x4d6204(0x1b4)][_0x4d6204(0xdd)]='hidden',requestAnimationFrame(()=>{const _0x305bac=_0x4d6204;if(_0x25523a===_0x305bac(0x15a))_0x541aaf[_0x305bac(0x128)][_0x305bac(0x10f)]='',_0x53c9ea(''),setTimeout(()=>_0x541aaf[_0x305bac(0x128)]['focus'](),0x64);else{if(_0x25523a==='tf')_0x32c6d3();else _0x25523a==='lang'&&_0x513890();}});}function _0x2fcd93(_0x16922c){const _0x266b82=_0x46445b;let _0xa568e2;if(_0x16922c===_0x266b82(0x15a))_0xa568e2=_0x541aaf['pairModal'];else{if(_0x16922c==='tf')_0xa568e2=_0x541aaf[_0x266b82(0x149)];else _0x16922c==='lang'&&(_0xa568e2=_0x541aaf[_0x266b82(0x1df)]);}if(!_0xa568e2)return;_0xa568e2[_0x266b82(0xe2)]['add'](_0x266b82(0x164)),document[_0x266b82(0x112)][_0x266b82(0x1b4)][_0x266b82(0xdd)]='';if(_0x16922c===_0x266b82(0x15a))_0x541aaf[_0x266b82(0xea)][_0x266b82(0x1cf)]();if(_0x16922c==='tf')_0x541aaf['tfBtn'][_0x266b82(0x1cf)]();if(_0x16922c===_0x266b82(0x1c1))_0x541aaf[_0x266b82(0x135)][_0x266b82(0x1cf)]();}function _0x53c9ea(_0x12e74f){const _0x19682e=_0x46445b,_0x5a6245=(_0x12e74f||'')[_0x19682e(0x173)]()[_0x19682e(0x120)](),_0x5e69e3=_0x1ec5ee[_0x19682e(0x138)](_0x270f90=>_0x270f90['toUpperCase']()[_0x19682e(0x108)](_0x5a6245));_0x541aaf[_0x19682e(0x1e0)][_0x19682e(0x176)]='';if(_0x5e69e3['length']===0x0){const _0x5c0500=document[_0x19682e(0x205)](_0x19682e(0x16e));_0x5c0500[_0x19682e(0x119)]=_0x19682e(0x187),_0x5c0500[_0x19682e(0x1b4)][_0x19682e(0xf3)]=_0x19682e(0x121),_0x5c0500[_0x19682e(0x1b4)]['textAlign']=_0x19682e(0x188),_0x5c0500[_0x19682e(0x1b4)][_0x19682e(0x1a7)]='var(--muted2)',_0x5c0500[_0x19682e(0x1c6)]=_0x128013['lang']==='ru'?'Ничего\x20не\x20найдено':_0x19682e(0x1b1),_0x541aaf['pairList'][_0x19682e(0x142)](_0x5c0500);return;}_0x5e69e3[_0x19682e(0x1c9)]((_0x50c268,_0x1cd5a6)=>{const _0x5c8702=_0x19682e,_0x49077c=document[_0x5c8702(0x205)](_0x5c8702(0x1d3));_0x49077c[_0x5c8702(0x1d2)]=_0x5c8702(0x1d3),_0x49077c['className']=_0x5c8702(0xe6)+(_0x50c268===_0x128013[_0x5c8702(0x15a)]?_0x5c8702(0xd9):''),_0x49077c[_0x5c8702(0x183)]('role','option'),_0x49077c[_0x5c8702(0x183)](_0x5c8702(0xd1),String(_0x50c268===_0x128013['pair']));const _0x15ce56=_0x31fa69(_0x50c268),_0x4e0b29=_0x109b99(_0x50c268);_0x49077c['innerHTML']=_0x5c8702(0x14b)+_0x15ce56[_0x5c8702(0x19d)]+_0x5c8702(0x1ee)+_0x15ce56[_0x5c8702(0xe7)]+_0x5c8702(0x1d1)+_0x404833(_0x4e0b29)+_0x5c8702(0xe4)+(_0x50c268===_0x128013[_0x5c8702(0x15a)]?'✓':'')+_0x5c8702(0xfa),_0x49077c[_0x5c8702(0x1d0)](_0x5c8702(0x106),()=>{const _0x23b249=_0x5c8702;_0x128013[_0x23b249(0x15a)]=_0x50c268,_0x117fca(),_0x26a9f3(),_0x2fcd93(_0x23b249(0x15a));}),_0x541aaf[_0x5c8702(0x1e0)][_0x5c8702(0x142)](_0x49077c),requestAnimationFrame(()=>{const _0x1c913d=_0x5c8702;_0x49077c[_0x1c913d(0x1b4)]['opacity']='0',_0x49077c[_0x1c913d(0x1b4)][_0x1c913d(0x18a)]=_0x1c913d(0x155),_0x49077c['style'][_0x1c913d(0x1ac)]='all\x20.3s\x20cubic-bezier(0.4,\x200,\x200.2,\x201)',setTimeout(()=>{const _0x236ae9=_0x1c913d;_0x49077c['style'][_0x236ae9(0x11e)]='1',_0x49077c[_0x236ae9(0x1b4)][_0x236ae9(0x18a)]=_0x236ae9(0x209);},_0x1cd5a6*0x19);});});}function _0x513890(){const _0x317aed=_0x46445b;_0x541aaf[_0x317aed(0xec)]['innerHTML']='',_0x343b12[_0x317aed(0x1c9)]((_0x39ef59,_0x33b628)=>{const _0x4bde62=_0x317aed,_0x275eda=document[_0x4bde62(0x205)](_0x4bde62(0x1d3));_0x275eda[_0x4bde62(0x1d2)]=_0x4bde62(0x1d3),_0x275eda[_0x4bde62(0x119)]='option'+(_0x39ef59[_0x4bde62(0x15c)]===_0x128013[_0x4bde62(0x1c1)]?_0x4bde62(0xd9):''),_0x275eda[_0x4bde62(0x183)]('role',_0x4bde62(0xe6)),_0x275eda[_0x4bde62(0x183)](_0x4bde62(0xd1),String(_0x39ef59[_0x4bde62(0x15c)]===_0x128013[_0x4bde62(0x1c1)])),_0x275eda[_0x4bde62(0x176)]=_0x4bde62(0xd0)+_0x39ef59[_0x4bde62(0x1a4)]+_0x4bde62(0x1de)+_0x404833(_0x39ef59[_0x4bde62(0x193)])+_0x4bde62(0xe4)+(_0x39ef59[_0x4bde62(0x15c)]===_0x128013['lang']?'✓':'')+_0x4bde62(0xfa),_0x275eda[_0x4bde62(0x1d0)](_0x4bde62(0x106),()=>{const _0x503c93=_0x4bde62;_0x2f4c02(_0x39ef59[_0x503c93(0x15c)]),_0x2fcd93(_0x503c93(0x1c1));}),_0x541aaf[_0x4bde62(0xec)]['appendChild'](_0x275eda),requestAnimationFrame(()=>{const _0x1e0600=_0x4bde62;_0x275eda[_0x1e0600(0x1b4)][_0x1e0600(0x11e)]='0',_0x275eda[_0x1e0600(0x1b4)][_0x1e0600(0x18a)]=_0x1e0600(0x155),_0x275eda['style'][_0x1e0600(0x1ac)]=_0x1e0600(0x1dd),setTimeout(()=>{const _0x8911e8=_0x1e0600;_0x275eda[_0x8911e8(0x1b4)][_0x8911e8(0x11e)]='1',_0x275eda[_0x8911e8(0x1b4)][_0x8911e8(0x18a)]=_0x8911e8(0x209);},_0x33b628*0x19);});});}function _0x32c6d3(){const _0x17154f=_0x46445b;_0x541aaf[_0x17154f(0x1e7)][_0x17154f(0x176)]='';const _0x5a5ce8=_0x4fcfb2();_0x5a5ce8[_0x17154f(0x1c9)]((_0x31de4e,_0x44a4d6)=>{const _0x5a02d5=_0x17154f,_0x3ee42f=document[_0x5a02d5(0x205)](_0x5a02d5(0x1d3));_0x3ee42f[_0x5a02d5(0x1d2)]=_0x5a02d5(0x1d3),_0x3ee42f[_0x5a02d5(0x119)]=_0x5a02d5(0xe6)+(_0x31de4e===_0x128013['tf']?_0x5a02d5(0xd9):''),_0x3ee42f[_0x5a02d5(0x183)]('role','option'),_0x3ee42f[_0x5a02d5(0x183)](_0x5a02d5(0xd1),String(_0x31de4e===_0x128013['tf']));let _0xe7aab2='';if(_0x31de4e[_0x5a02d5(0x108)]('S'))_0xe7aab2=_0x128013[_0x5a02d5(0x1c1)]==='ru'?_0x5a02d5(0x139):_0x5a02d5(0x181);else{if(_0x31de4e[_0x5a02d5(0x108)]('M'))_0xe7aab2=_0x128013['lang']==='ru'?'минуты':_0x5a02d5(0xf6);else{if(_0x31de4e['includes']('H'))_0xe7aab2=_0x128013[_0x5a02d5(0x1c1)]==='ru'?_0x5a02d5(0x165):_0x5a02d5(0xdf);else _0x31de4e[_0x5a02d5(0x108)]('D')&&(_0xe7aab2=_0x128013[_0x5a02d5(0x1c1)]==='ru'?'дни':_0x5a02d5(0xf9));}}_0x3ee42f[_0x5a02d5(0x176)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__main\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__title\x22>'+_0x404833(_0x31de4e)+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__sub\x22>'+_0x404833(_0xe7aab2)+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__check\x22\x20aria-hidden=\x22true\x22>'+(_0x31de4e===_0x128013['tf']?'✓':'')+_0x5a02d5(0xfa),_0x3ee42f[_0x5a02d5(0x1d0)](_0x5a02d5(0x106),()=>{const _0x3fe6a3=_0x5a02d5;_0x128013['tf']=_0x31de4e,_0x541aaf[_0x3fe6a3(0x109)][_0x3fe6a3(0x1c6)]=_0x31de4e,_0x26a9f3(),_0x2fcd93('tf');}),_0x541aaf[_0x5a02d5(0x1e7)][_0x5a02d5(0x142)](_0x3ee42f),requestAnimationFrame(()=>{const _0x2c757b=_0x5a02d5;_0x3ee42f[_0x2c757b(0x1b4)]['opacity']='0',_0x3ee42f['style'][_0x2c757b(0x18a)]=_0x2c757b(0x155),_0x3ee42f[_0x2c757b(0x1b4)][_0x2c757b(0x1ac)]=_0x2c757b(0x1dd),setTimeout(()=>{const _0x4ca5b5=_0x2c757b;_0x3ee42f['style'][_0x4ca5b5(0x11e)]='1',_0x3ee42f[_0x4ca5b5(0x1b4)][_0x4ca5b5(0x18a)]=_0x4ca5b5(0x209);},_0x44a4d6*0x19);});});}function _0x23fe61(){const _0x4b594a=_0x46445b,_0x55bc65=_0x51ffaa(_0x128013[_0x4b594a(0x16b)]+'|'+_0x128013[_0x4b594a(0x15a)]+'|'+_0x128013['tf']+'|'+Date[_0x4b594a(0x136)]()+'|'+Math[_0x4b594a(0x126)]()),_0x1a5f89=_0x2235be(_0x55bc65),_0x312dbc=_0x1a5f89()>0.5?'BUY':'SELL',_0x2aa089=Math[_0x4b594a(0x200)](0x48+_0x1a5f89()*0x17);return{'side':_0x312dbc,'accuracy':_0x2aa089};}function _0x3e77f7(){const _0x26d234=_0x46445b,_0x3e3fe2=_0xf224f(_0x128013[_0x26d234(0x15a)],_0x128013[_0x26d234(0x16b)]);if(_0x3e3fe2>0x0)return;_0x541aaf[_0x26d234(0x10e)][_0x26d234(0xe2)][_0x26d234(0x1ab)]('is-loading'),_0x541aaf['getSignalBtn'][_0x26d234(0x1c0)]=!![];!_0x541aaf[_0x26d234(0x10d)][_0x26d234(0xe2)][_0x26d234(0x1ad)](_0x26d234(0x164))&&_0x541aaf[_0x26d234(0x10d)]['classList'][_0x26d234(0x1ab)](_0x26d234(0x164));_0x541aaf['emptyState']['style']['display']='none',_0x541aaf[_0x26d234(0x1f1)][_0x26d234(0xe2)][_0x26d234(0x190)](_0x26d234(0x164)),_0x541aaf[_0x26d234(0x1a9)][_0x26d234(0x1b4)][_0x26d234(0x1fe)]='0%';let _0x55f3c8=0x0;const _0x77ed4=setInterval(()=>{const _0x38f1e1=_0x26d234;_0x55f3c8+=Math[_0x38f1e1(0x126)]()*0x8+0x3;if(_0x55f3c8>0x5f)_0x55f3c8=0x5f;_0x541aaf[_0x38f1e1(0x1a9)][_0x38f1e1(0x1b4)][_0x38f1e1(0x1fe)]=_0x55f3c8+'%';},0x96),_0xc1887a=[{'text':_0x40f9ce(_0x26d234(0x196)),'delay':0x0},{'text':_0x40f9ce('calculating'),'delay':0x320},{'text':_0x40f9ce(_0x26d234(0xf7)),'delay':0x640}];_0xc1887a[_0x26d234(0x1c9)](_0x4cfcd3=>{const _0x167c85=_0x26d234;setTimeout(()=>{const _0x1b738d=_0x49e2;_0x541aaf[_0x1b738d(0x140)]['textContent']=_0x4cfcd3[_0x1b738d(0x1cb)];},_0x4cfcd3[_0x167c85(0x1b6)]);});const _0x33a4e2=0x9c4+Math[_0x26d234(0x126)]()*0x3e8;setTimeout(()=>{const _0x181a6e=_0x26d234;clearInterval(_0x77ed4),_0x541aaf[_0x181a6e(0x1a9)][_0x181a6e(0x1b4)]['width']='100%',setTimeout(()=>{const _0x12f830=_0x181a6e,{side:_0x43df28,accuracy:_0x28967d}=_0x23fe61();_0x541aaf['pillMarketV'][_0x12f830(0x1c6)]=_0x128013[_0x12f830(0x16b)],_0x541aaf[_0x12f830(0x146)][_0x12f830(0x1c6)]=_0x28967d+'%',_0x117fca(),_0x541aaf['tfOut'][_0x12f830(0x1c6)]=_0x128013['tf'];const _0x9bd0f1=_0x43df28===_0x12f830(0x1a1)?_0x40f9ce(_0x12f830(0x1d7)):_0x40f9ce(_0x12f830(0x203));_0x541aaf[_0x12f830(0x159)][_0x12f830(0x1c6)]=_0x9bd0f1,_0x541aaf[_0x12f830(0x19a)][_0x12f830(0xe2)][_0x12f830(0x1da)](_0x12f830(0x16c),_0x43df28===_0x12f830(0x1a1)),_0x541aaf['signalBadge']['classList'][_0x12f830(0x1da)](_0x12f830(0xd7),_0x43df28==='SELL'),_0x541aaf[_0x12f830(0x1f1)][_0x12f830(0xe2)]['add']('is-hidden'),_0x541aaf['signalCard']['classList']['remove'](_0x12f830(0x164)),_0xb33e8c(_0x128013[_0x12f830(0x15a)],_0x128013[_0x12f830(0x16b)],_0x128013['tf']),_0x541aaf[_0x12f830(0x10e)][_0x12f830(0xe2)]['remove']('is-loading'),_0x541aaf[_0x12f830(0x10e)][_0x12f830(0x1c0)]=![],_0x26a9f3(),_0x541aaf[_0x12f830(0x10d)]['focus']();},0xc8);},_0x33a4e2);}function _0x26a9f3(){const _0x3f417f=_0x46445b,_0x2371a1=_0xf224f(_0x128013['pair'],_0x128013[_0x3f417f(0x16b)]);if(_0x2371a1>0x0){_0x541aaf[_0x3f417f(0x10e)][_0x3f417f(0x1c0)]=!![],_0x541aaf[_0x3f417f(0x10e)]['classList'][_0x3f417f(0x1ab)](_0x3f417f(0x1fb));const _0x598022=_0x23f3ea(_0x2371a1);_0x541aaf[_0x3f417f(0x1a6)]['textContent']=_0x40f9ce(_0x3f417f(0xe8))+':\x20'+_0x598022;}else _0x541aaf[_0x3f417f(0x10e)][_0x3f417f(0x1c0)]=![],_0x541aaf['getSignalBtn'][_0x3f417f(0xe2)][_0x3f417f(0x190)](_0x3f417f(0x1fb)),_0x541aaf[_0x3f417f(0x1a6)][_0x3f417f(0x1c6)]=_0x40f9ce(_0x3f417f(0x18d));}setInterval(()=>{_0x26a9f3();},0x3e8);function _0x404833(_0x27230c){const _0x260099=_0x46445b;return String(_0x27230c)[_0x260099(0xf4)]('&',_0x260099(0x168))['replaceAll']('<',_0x260099(0x1bf))['replaceAll']('>',_0x260099(0x110))[_0x260099(0xf4)]('\x22',_0x260099(0x1f6))[_0x260099(0xf4)]('\x27',_0x260099(0x15d));}function _0x51ffaa(_0x3f481e){const _0x4fdad7=_0x46445b;let _0x12c5c1=0x811c9dc5;for(let _0x4c5277=0x0;_0x4c5277<_0x3f481e[_0x4fdad7(0x1f9)];_0x4c5277++){_0x12c5c1^=_0x3f481e[_0x4fdad7(0x185)](_0x4c5277),_0x12c5c1=Math[_0x4fdad7(0xfe)](_0x12c5c1,0x1000193);}return _0x12c5c1>>>0x0;}function _0x2235be(_0x1b961a){return function(){const _0x293b18=_0x49e2;let _0x205f7f=_0x1b961a+=0x6d2b79f5;return _0x205f7f=Math[_0x293b18(0xfe)](_0x205f7f^_0x205f7f>>>0xf,_0x205f7f|0x1),_0x205f7f^=_0x205f7f+Math[_0x293b18(0xfe)](_0x205f7f^_0x205f7f>>>0x7,_0x205f7f|0x3d),((_0x205f7f^_0x205f7f>>>0xe)>>>0x0)/0x100000000;};}_0x541aaf[_0x46445b(0x135)]['addEventListener'](_0x46445b(0x106),()=>{const _0x5eb8c4=_0x46445b;_0xa091f1(_0x5eb8c4(0x1c1));}),_0x541aaf['marketForex']['addEventListener'](_0x46445b(0x106),()=>_0x1006cd(_0x46445b(0x16f))),_0x541aaf[_0x46445b(0x148)]['addEventListener']('click',()=>_0x1006cd(_0x46445b(0x1dc))),_0x541aaf[_0x46445b(0xea)][_0x46445b(0x1d0)]('click',()=>_0xa091f1('pair')),_0x541aaf['tfBtn'][_0x46445b(0x1d0)](_0x46445b(0x106),()=>_0xa091f1('tf')),_0x541aaf[_0x46445b(0x128)][_0x46445b(0x1d0)](_0x46445b(0xdc),_0x122ec3=>_0x53c9ea(_0x122ec3['target']['value'])),document['addEventListener'](_0x46445b(0x106),_0x252d68=>{const _0x10e367=_0x46445b,_0x53184c=_0x252d68[_0x10e367(0x1b3)];if(!(_0x53184c instanceof HTMLElement))return;const _0x419608=_0x53184c[_0x10e367(0x1fc)](_0x10e367(0x12e));_0x419608===_0x10e367(0x15a)&&!_0x541aaf[_0x10e367(0x13f)][_0x10e367(0xe2)][_0x10e367(0x1ad)](_0x10e367(0x164))&&_0x2fcd93(_0x10e367(0x15a)),_0x419608==='tf'&&!_0x541aaf[_0x10e367(0x149)][_0x10e367(0xe2)][_0x10e367(0x1ad)](_0x10e367(0x164))&&_0x2fcd93('tf'),_0x419608==='lang'&&!_0x541aaf[_0x10e367(0x1df)][_0x10e367(0xe2)]['contains'](_0x10e367(0x164))&&_0x2fcd93(_0x10e367(0x1c1));}),document[_0x46445b(0x1d0)](_0x46445b(0x1cc),_0x442a02=>{const _0x53f0b6=_0x46445b;if(_0x442a02['key']===_0x53f0b6(0x192)){if(!_0x541aaf[_0x53f0b6(0x13f)][_0x53f0b6(0xe2)][_0x53f0b6(0x1ad)]('is-hidden'))_0x2fcd93(_0x53f0b6(0x15a)),_0x442a02['preventDefault']();else{if(!_0x541aaf[_0x53f0b6(0x149)][_0x53f0b6(0xe2)][_0x53f0b6(0x1ad)](_0x53f0b6(0x164)))_0x2fcd93('tf'),_0x442a02['preventDefault']();else!_0x541aaf['langModal'][_0x53f0b6(0xe2)][_0x53f0b6(0x1ad)]('is-hidden')&&(_0x2fcd93(_0x53f0b6(0x1c1)),_0x442a02[_0x53f0b6(0x104)]());}}}),_0x541aaf['getSignalBtn'][_0x46445b(0x1d0)](_0x46445b(0x106),_0x3e77f7),_0x2f4c02(_0x128013[_0x46445b(0x1c1)]),_0x1006cd(_0x128013[_0x46445b(0x16b)]),_0x117fca(),_0x541aaf[_0x46445b(0x109)][_0x46445b(0x1c6)]=_0x128013['tf'],_0x26a9f3();})()));function _0x23c6(){const _0x3afc3e=['finalizing','Формирование\x20результата...','days','</span>\x0a\x20\x20\x20\x20\x20\x20','pillMarketK','CAD/JPY','Vaqt\x20oralig\x27ini\x20tanlash','imul','EUR/JPY','ceil','AUD/INR','SOTIB\x20OLISH','Bo\x27zor','preventDefault','انتظر','click','setItem','includes','tfValue','RUB/GBP','Выбор\x20языка','Pick\x20market,\x20pair\x20and\x20timeframe\x20—\x20then\x20get\x20a\x20signal.','signalCard','getSignalBtn','value','&gt;','हिन्दी','body','AUD/RUB','Signal\x20olish','زوج\x20العملات','परिणाम\x20अंतिम\x20रूप\x20देना...','प्रतीक्षा','15M','className','171180qyQeSO','8jbszcV','15S','Русский','opacity','Поиск\x20(например\x20EUR)','toUpperCase','40px\x2020px','some','title','बाज़ार,\x20जोड़ी\x20और\x20समय\x20सीमा\x20चुनें\x20—\x20और\x20सिग्नल\x20प्राप्त\x20करें।','Par','random','شراء','pairSearch','is-active','tfBtn','बाज़ार\x20का\x20विश्लेषण...','\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22','الحصول\x20على\x20إشارة','data-close','USD/INR','EUR/INR','AUD/CHF','सिग्नल\x20प्राप्त\x20करें','2359161rzsxYK','tfK','langBtn','now','Calculating\x20signal...','filter','секунды','pairOut','اختر\x20زوج\x20العملات','खोजें\x20(उदा.\x20EUR)','emptyState','डेमो\x20जेनरेटर।\x20वास्तविक\x20सिग्नल\x20के\x20लिए\x20backend/API\x20कनेक्ट\x20करें।','pairModal','loadingText','البحث\x20(مثال\x20EUR)','appendChild','Qidirish\x20(masalan\x20EUR)','Par\x20de\x20moedas','15795rZpXUd','pillAccuracyV','समय\x20सीमा\x20चुनें','marketOtc','tfModal','EUR/CAD','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__flags\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','Analyzing\x20market...','pairOutFlags','EUR/CHF','find','CHF/JPY','floor','pairValueFlags','समय\x20सीमा','Kartani\x20ko\x27rish\x20uchun\x20\x27Signal\x20olish\x27ni\x20bosing.','translateY(10px)','EUR/UZS','اختر\x20اللغة','accuracy','signalV','pair','Sinal','code','&#039;','1281273BiZuut','GBP/USD','सिग्नल','USD/CHF','GBP/CAD','alt','is-hidden','часы','EUR/SAR','VENDER','&amp;','AUD/BRL','Finalizando\x20resultado...','market','signalBadge--buy','बेचें','div','Forex','GBP/CHF','Pesquisar\x20(ex.\x20EUR)','tradingAppLang','trim','EUR/USD','getItem','innerHTML','Bo\x27zorni\x20tahlil\x20qilish...','USD/CAD','Calculando\x20sinal...','documentElement','RUB/EUR','66nwRHix','EUR/NZD','pairK','COMPRAR','English','seconds','Get\x20signal','setAttribute','Search\x20(e.g.\x20EUR)','charCodeAt','pairLabel','empty','center','Savdo\x20signallari','transform','248XDuKoR','सटीकता','getSignal','timeframe','6864qtCMaA','remove','Trading\x20signals','Escape','name','562WYgHWI','Покупать','analyzing','मुद्रा\x20जोड़ी\x20चुनें','placeholder','الزوج','signalBadge','Período','Вычисление\x20сигнала...','base','Currency\x20pair','Выбор\x20валютной\x20пары','Choose\x20currency\x20pair','BUY','बाज़ार','Valyuta\x20juftligini\x20tanlash','flag','Mercado','getSignalText','color','tfModalTitle','loadingProgress','NZD/JPY','add','transition','contains','GBP/JPY','Точность','subtitle','No\x20results\x20found','pillAccuracyK','target','style','Accuracy','delay','30S','मुद्रा\x20जोड़ी','split','CAD/RUB','RUB/UZS','langPick','إنهاء\x20النتيجة...','CHF/RUB','&lt;','disabled','lang','\x20OTC','Juftlik','GBP/AUD','737yuwDrR','textContent','Choose\x20language','15CkhmFg','forEach','3010680pzcSHx','text','keydown','.svg','Natijani\x20yakunlash...','focus','addEventListener','\x22\x20alt=\x22\x22\x20class=\x22option__flag\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__main\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__title\x22>','type','button','GBP/INR','USD/BRL','GBP/NZD','buy','Vaqt\x20oralig\x27i','Signal','toggle','langFlag','OTC','all\x20.3s\x20cubic-bezier(0.4,\x200,\x200.2,\x201)','.svg\x22\x20alt=\x22\x22\x20class=\x22option__flag\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__main\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__title\x22>','langModal','pairList','EUR/GBP','Demo\x20generator.\x20Connect\x20a\x20backend/API\x20for\x20real\x20signals.','Сигналы\x20для\x20трейдинга','emptyText','بيع','الإشارة','tfList','SELL','AUD/JPY','marketForex','Pair','اختر\x20الإطار\x20الزمني','Bo\x27zorni,\x20juftlikni\x20va\x20vaqt\x20oralig\x27ini\x20tanlang\x20—\x20va\x20signal\x20oling.','\x22\x20alt=\x22\x22\x20class=\x22option__flag\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','الدقة','svg/','loadingState','إشارات\x20التداول','Выберите\x20рынок,\x20пару\x20и\x20таймфрейм\x20—\x20и\x20получите\x20сигнал.','भाषा\x20चुनें','Finalizing\x20result...','&quot;','Escolher\x20período','getElementById','length','INR/JPY','is-cooldown','getAttribute','Получить\x20сигнал','width','SOTISH','round','Aguarde','Choose\x20timeframe','sell','Analisando\x20mercado...','createElement','Рынок','Signalni\x20hisoblash...','tfLabel','translateY(0)','الإطار\x20الزمني','Timeframe','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__flags\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22svg/','aria-selected','Kutish','pairModalTitle','Это\x20демонстрационный\x20генератор.\x20Подключите\x20бэкенд/API\x20для\x20реальных\x20сигналов.','USD/UZS','Aniqlik','signalBadge--sell','GBP/SAR','\x20is-selected','AUD/USD','Namoyish\x20generatori.\x20Haqiqiy\x20signallar\x20uchun\x20backend/API\x20ulang.','input','overflow','Tilni\x20tanlash','hours','Gerador\x20de\x20demonstração.\x20Conecte\x20um\x20backend/API\x20para\x20sinais\x20reais.','pairValue','classList','تحليل\x20السوق...','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22option__check\x22\x20aria-hidden=\x22true\x22>','Нажмите\x20«Получить\x20сигнал»,\x20чтобы\x20увидеть\x20карточку.','option','quote','wait','GBP/BRL','pairBtn','Precisão','langList','Валютная\x20пара','खरीदें','EUR/RUB','Click\x20\x27Get\x20signal\x27\x20to\x20show\x20the\x20card.','AUD/CAD','USD/RUB','padding','replaceAll','Obter\x20sinal','minutes'];_0x23c6=function(){return _0x3afc3e;};return _0x23c6();}
+(() => {
+    const els = {
+      langBtn: document.getElementById("langBtn"),
+      langFlag: document.getElementById("langFlag"),
+      langModal: document.getElementById("langModal"),
+      langList: document.getElementById("langList"),
+      langModalTitle: document.getElementById("langModalTitle"),
+  
+      marketForex: document.getElementById("marketForex"),
+      marketOtc: document.getElementById("marketOtc"),
+  
+      pairBtn: document.getElementById("pairBtn"),
+      tfBtn: document.getElementById("tfBtn"),
+  
+      pairLabel: document.getElementById("pairLabel"),
+      tfLabel: document.getElementById("tfLabel"),
+      pairValue: document.getElementById("pairValue"),
+      pairValueFlags: document.getElementById("pairValueFlags"),
+      pairOutFlags: document.getElementById("pairOutFlags"),
+      tfValue: document.getElementById("tfValue"),
+  
+      getSignalBtn: document.getElementById("getSignalBtn"),
+      getSignalText: document.getElementById("getSignalText"),
+  
+      signalCard: document.getElementById("signalCard"),
+      emptyState: document.getElementById("emptyState"),
+      loadingState: document.getElementById("loadingState"),
+      loadingText: document.getElementById("loadingText"),
+      loadingProgress: document.getElementById("loadingProgress"),
+  
+      pillMarketK: document.getElementById("pillMarketK"),
+      pillMarketV: document.getElementById("pillMarketV"),
+      pillAccuracyK: document.getElementById("pillAccuracyK"),
+      pillAccuracyV: document.getElementById("pillAccuracyV"),
+  
+      pairK: document.getElementById("pairK"),
+      tfK: document.getElementById("tfK"),
+      pairOut: document.getElementById("pairOut"),
+      tfOut: document.getElementById("tfOut"),
+  
+      signalBadge: document.getElementById("signalBadge"),
+      signalV: document.getElementById("signalV"),
+  
+      title: document.getElementById("title"),
+      subtitle: document.getElementById("subtitle"),
+      emptyText: document.getElementById("emptyText"),
+  
+      pairModal: document.getElementById("pairModal"),
+      tfModal: document.getElementById("tfModal"),
+      pairSearch: document.getElementById("pairSearch"),
+      pairList: document.getElementById("pairList"),
+      tfList: document.getElementById("tfList"),
+      pairModalTitle: document.getElementById("pairModalTitle"),
+      tfModalTitle: document.getElementById("tfModalTitle"),
+    };
+  
+    const LANGUAGES = [
+      { code: "ru", name: "Русский", flag: "ru" },
+      { code: "en", name: "English", flag: "us" },
+      { code: "br", name: "Português", flag: "br" },
+      { code: "uz", name: "O'zbek", flag: "uz" },
+      { code: "ar", name: "العربية", flag: "sa" },
+      { code: "hi", name: "हिन्दी", flag: "in" },
+    ];
+  
+    // Функция для получения языка по умолчанию из localStorage или английский
+    function getDefaultLang() {
+      const savedLang = localStorage.getItem("tradingAppLang");
+      return savedLang && LANGUAGES.some(l => l.code === savedLang) ? savedLang : "en";
+    }
+  
+    const DICT = {
+      ru: {
+        title: "Сигналы для трейдинга",
+        subtitle: "Выберите рынок, пару и таймфрейм — и получите сигнал.",
+        market: "Рынок",
+        accuracy: "Точность",
+        pair: "Пара",
+        timeframe: "Таймфрейм",
+        pairPick: "Выбор валютной пары",
+        tfPick: "Выбор таймфрейма",
+        pairLabel: "Валютная пара",
+        tfLabel: "Таймфрейм",
+        getSignal: "Получить сигнал",
+        signal: "Сигнал",
+        buy: "Покупать",
+        sell: "Продавать",
+        empty: "Нажмите «Получить сигнал», чтобы увидеть карточку.",
+        hint: "Это демонстрационный генератор. Подключите бэкенд/API для реальных сигналов.",
+        searchPh: "Поиск (например EUR)",
+        analyzing: "Анализ рынка...",
+        calculating: "Вычисление сигнала...",
+        finalizing: "Формирование результата...",
+        langPick: "Выбор языка",
+        wait: "Wait",
+      },
+      en: {
+        title: "Trading signals",
+        subtitle: "Pick market, pair and timeframe — then get a signal.",
+        market: "Market",
+        accuracy: "Accuracy",
+        pair: "Pair",
+        timeframe: "Timeframe",
+        pairPick: "Choose currency pair",
+        tfPick: "Choose timeframe",
+        pairLabel: "Currency pair",
+        tfLabel: "Timeframe",
+        getSignal: "Get signal",
+        signal: "Signal",
+        buy: "BUY",
+        sell: "SELL",
+        empty: "Click 'Get signal' to show the card.",
+        hint: "Demo generator. Connect a backend/API for real signals.",
+        searchPh: "Search (e.g. EUR)",
+        analyzing: "Analyzing market...",
+        calculating: "Calculating signal...",
+        finalizing: "Finalizing result...",
+        langPick: "Choose language",
+        wait: "Wait",
+      },
+      br: {
+        title: "Sinais de negociação",
+        subtitle: "Escolha mercado, par e período — e receba um sinal.",
+        market: "Mercado",
+        accuracy: "Precisão",
+        pair: "Par",
+        timeframe: "Período",
+        pairPick: "Escolher par de moedas",
+        tfPick: "Escolher período",
+        pairLabel: "Par de moedas",
+        tfLabel: "Período",
+        getSignal: "Obter sinal",
+        signal: "Sinal",
+        buy: "COMPRAR",
+        sell: "VENDER",
+        empty: "Clique em 'Obter sinal' para ver o cartão.",
+        hint: "Gerador de demonstração. Conecte um backend/API para sinais reais.",
+        searchPh: "Pesquisar (ex. EUR)",
+        analyzing: "Analisando mercado...",
+        calculating: "Calculando sinal...",
+        finalizing: "Finalizando resultado...",
+        langPick: "Escolher idioma",
+        wait: "Aguarde",
+      },
+      uz: {
+        title: "Savdo signallari",
+        subtitle: "Bo'zorni, juftlikni va vaqt oralig'ini tanlang — va signal oling.",
+        market: "Bo'zor",
+        accuracy: "Aniqlik",
+        pair: "Juftlik",
+        timeframe: "Vaqt oralig'i",
+        pairPick: "Valyuta juftligini tanlash",
+        tfPick: "Vaqt oralig'ini tanlash",
+        pairLabel: "Valyuta juftligi",
+        tfLabel: "Vaqt oralig'i",
+        getSignal: "Signal olish",
+        signal: "Signal",
+        buy: "SOTIB OLISH",
+        sell: "SOTISH",
+        empty: "Kartani ko'rish uchun 'Signal olish'ni bosing.",
+        hint: "Namoyish generatori. Haqiqiy signallar uchun backend/API ulang.",
+        searchPh: "Qidirish (masalan EUR)",
+        analyzing: "Bo'zorni tahlil qilish...",
+        calculating: "Signalni hisoblash...",
+        finalizing: "Natijani yakunlash...",
+        langPick: "Tilni tanlash",
+        wait: "Kutish",
+      },
+      ar: {
+        title: "إشارات التداول",
+        subtitle: "اختر السوق والزوج والإطار الزمني — واحصل على إشارة.",
+        market: "السوق",
+        accuracy: "الدقة",
+        pair: "الزوج",
+        timeframe: "الإطار الزمني",
+        pairPick: "اختر زوج العملات",
+        tfPick: "اختر الإطار الزمني",
+        pairLabel: "زوج العملات",
+        tfLabel: "الإطار الزمني",
+        getSignal: "الحصول على إشارة",
+        signal: "الإشارة",
+        buy: "شراء",
+        sell: "بيع",
+        empty: "انقر على 'الحصول على إشارة' لعرض البطاقة.",
+        hint: "مولد تجريبي. قم بتوصيل backend/API للإشارات الحقيقية.",
+        searchPh: "البحث (مثال EUR)",
+        analyzing: "تحليل السوق...",
+        calculating: "حساب الإشارة...",
+        finalizing: "إنهاء النتيجة...",
+        langPick: "اختر اللغة",
+        wait: "انتظر",
+      },
+      hi: {
+        title: "ट्रेडिंग सिग्नल",
+        subtitle: "बाज़ार, जोड़ी और समय सीमा चुनें — और सिग्नल प्राप्त करें।",
+        market: "बाज़ार",
+        accuracy: "सटीकता",
+        pair: "जोड़ी",
+        timeframe: "समय सीमा",
+        pairPick: "मुद्रा जोड़ी चुनें",
+        tfPick: "समय सीमा चुनें",
+        pairLabel: "मुद्रा जोड़ी",
+        tfLabel: "समय सीमा",
+        getSignal: "सिग्नल प्राप्त करें",
+        signal: "सिग्नल",
+        buy: "खरीदें",
+        sell: "बेचें",
+        empty: "कार्ड देखने के लिए 'सिग्नल प्राप्त करें' पर क्लिक करें।",
+        hint: "डेमो जेनरेटर। वास्तविक सिग्नल के लिए backend/API कनेक्ट करें।",
+        searchPh: "खोजें (उदा. EUR)",
+        analyzing: "बाज़ार का विश्लेषण...",
+        calculating: "सिग्नल की गणना...",
+        finalizing: "परिणाम अंतिम रूप देना...",
+        langPick: "भाषा चुनें",
+        wait: "प्रतीक्षा",
+      },
+    };
+  
+    const state = {
+      lang: getDefaultLang(),
+      market: "Forex",
+      pair: "EUR/USD",
+      tf: "1M",
+    };
+  
+    // Хранилище кулдаунов для валютных пар
+    const cooldowns = {};
+  
+    // Функция для конвертации таймфрейма в миллисекунды
+    function timeframeToMs(tf) {
+      const num = parseInt(tf);
+      if (tf.includes("S")) {
+        return num * 1000; // секунды
+      } else if (tf.includes("M")) {
+        return num * 60 * 1000; // минуты
+      } else if (tf.includes("H")) {
+        return num * 60 * 60 * 1000; // часы
+      } else if (tf.includes("D")) {
+        return num * 24 * 60 * 60 * 1000; // дни
+      }
+      return 60000; // по умолчанию 1 минута
+    }
+  
+    // Функция для получения ключа кулдауна (пара + рынок)
+    function getCooldownKey(pair, market) {
+      return market === "OTC" ? `${pair} OTC` : pair;
+    }
+  
+    // Функция для проверки кулдауна
+    function getCooldownRemaining(pair, market) {
+      const key = getCooldownKey(pair, market);
+      if (!cooldowns[key]) return 0;
+      const remaining = cooldowns[key] - Date.now();
+      return remaining > 0 ? remaining : 0;
+    }
+  
+    // Функция для установки кулдауна
+    function setCooldown(pair, market, tf) {
+      const key = getCooldownKey(pair, market);
+      const ms = timeframeToMs(tf);
+      cooldowns[key] = Date.now() + ms;
+    }
+  
+    // Функция для форматирования времени
+    function formatTime(ms) {
+      const seconds = Math.ceil(ms / 1000);
+      if (seconds < 60) {
+        return `${seconds}s`;
+      }
+      const minutes = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return secs > 0 ? `${minutes}m ${secs}s` : `${minutes}m`;
+    }
+  
+    // Только "обычные" валютные пары (без крипто/металлов).
+    const PAIRS = [
+      "EUR/USD",
+      "GBP/USD",
+      "USD/JPY",
+      "USD/CHF",
+      "AUD/USD",
+      "USD/CAD",
+      "NZD/USD",
+      "EUR/GBP",
+      "EUR/JPY",
+      "GBP/JPY",
+      "EUR/CHF",
+      "AUD/JPY",
+      "EUR/AUD",
+      "GBP/CHF",
+      "GBP/AUD",
+      "AUD/CAD",
+      "CAD/JPY",
+      "CHF/JPY",
+      "EUR/CAD",
+      "GBP/CAD",
+      "AUD/CHF",
+      "NZD/JPY",
+      "EUR/NZD",
+      "GBP/NZD",
+      // Пары с RUB (Россия)
+      "USD/RUB",
+      "EUR/RUB",
+      "GBP/RUB",
+      "RUB/JPY",
+      "RUB/EUR",
+      "RUB/GBP",
+      "CAD/RUB",
+      "AUD/RUB",
+      "CHF/RUB",
+      // Пары с INR (Индия)
+      "USD/INR",
+      "EUR/INR",
+      "GBP/INR",
+      "INR/JPY",
+      "AUD/INR",
+      "CAD/INR",
+      // Пары с BRL (Бразилия)
+      "USD/BRL",
+      "EUR/BRL",
+      "GBP/BRL",
+      "BRL/JPY",
+      "AUD/BRL",
+      // Пары с SAR (Саудовская Аравия)
+      "USD/SAR",
+      "EUR/SAR",
+      "GBP/SAR",
+      // Пары с UZS (Узбекистан)
+      "USD/UZS",
+      "EUR/UZS",
+      "RUB/UZS",
+    ];
+  
+    const TIMEFRAMES_FOREX = ["1M", "3M", "5M", "15M", "30M"];
+    const TIMEFRAMES_OTC = ["5S", "15S", "30S", "1M", "3M", "5M", "15M"];
+  
+    function getTimeframes() {
+      return state.market === "Forex" ? TIMEFRAMES_FOREX : TIMEFRAMES_OTC;
+    }
+  
+    // Маппинг валют к флагам
+    const CURRENCY_FLAGS = {
+      EUR: "eu",
+      USD: "us",
+      GBP: "gb",
+      JPY: "jp",
+      CHF: "ch",
+      AUD: "au",
+      CAD: "ca",
+      NZD: "au", // Новая Зеландия - используем австралийский флаг как запасной
+      RUB: "ru", // Россия
+      INR: "in", // Индия
+      BRL: "br", // Бразилия
+      SAR: "sa", // Саудовская Аравия
+      UZS: "uz", // Узбекистан
+    };
+  
+    function getFlagPath(currency) {
+      const flagCode = CURRENCY_FLAGS[currency] || "us";
+      return `svg/${flagCode}.svg`;
+    }
+  
+    function getPairFlags(pair) {
+      const [base, quote] = pair.split("/");
+      return {
+        base: getFlagPath(base),
+        quote: getFlagPath(quote),
+      };
+    }
+  
+    function t(key) {
+      return DICT[state.lang][key] ?? key;
+    }
+  
+    function setLang(next) {
+      state.lang = next;
+      // Сохраняем выбранный язык в localStorage
+      localStorage.setItem("tradingAppLang", next);
+      
+      const lang = LANGUAGES.find((l) => l.code === next);
+      if (lang && els.langFlag) {
+        els.langFlag.src = `svg/${lang.flag}.svg`;
+        els.langFlag.alt = lang.code.toUpperCase();
+      }
+      document.documentElement.lang = next;
+  
+      els.title.textContent = t("title");
+      els.subtitle.textContent = t("subtitle");
+      els.pillMarketK.textContent = t("market");
+      els.pillAccuracyK.textContent = t("accuracy");
+      els.pairK.textContent = t("pair");
+      els.tfK.textContent = t("timeframe");
+      els.pairLabel.textContent = t("pairLabel");
+      els.tfLabel.textContent = t("tfLabel");
+      els.getSignalText.textContent = t("getSignal");
+      els.emptyText.textContent = t("empty");
+      els.pairModalTitle.textContent = t("pairPick");
+      els.tfModalTitle.textContent = t("tfPick");
+      els.langModalTitle.textContent = t("langPick");
+      els.pairSearch.placeholder = t("searchPh");
+  
+      renderPairList(els.pairSearch.value || "");
+      renderTfList();
+      renderLangList();
+    }
+  
+    function setMarket(market) {
+      state.market = market;
+      const isForex = market === "Forex";
+      els.marketForex.classList.toggle("is-active", isForex);
+      els.marketOtc.classList.toggle("is-active", !isForex);
+      els.marketForex.setAttribute("aria-selected", String(isForex));
+      els.marketOtc.setAttribute("aria-selected", String(!isForex));
+  
+      // Проверяем, доступен ли текущий таймфрейм в новом рынке
+      const availableTfs = getTimeframes();
+      if (!availableTfs.includes(state.tf)) {
+        state.tf = availableTfs[0];
+        els.tfValue.textContent = state.tf;
+      }
+  
+      // Обновляем отображение пары (для OTC добавляем суффикс)
+      syncPairUI();
+      // Если модалка пар открыта — обновим список, чтобы суффикс сразу поменялся
+      if (!els.pairModal.classList.contains("is-hidden")) {
+        renderPairList(els.pairSearch.value || "");
+      }
+      // Если модалка таймфреймов открыта — обновим список
+      if (!els.tfModal.classList.contains("is-hidden")) {
+        renderTfList();
+      }
+    }
+  
+    function formatPairDisplay(pair) {
+      return state.market === "OTC" ? `${pair} OTC` : pair;
+    }
+  
+    function renderFlags(container, pair) {
+      const flags = getPairFlags(pair);
+      container.innerHTML = `
+        <img src="${flags.base}" alt="" class="flag flag--round" />
+        <img src="${flags.quote}" alt="" class="flag flag--round" />
+      `;
+    }
+  
+    function syncPairUI() {
+      const display = formatPairDisplay(state.pair);
+      els.pairValue.textContent = display;
+      els.pairOut.textContent = display;
+      renderFlags(els.pairValueFlags, state.pair);
+      renderFlags(els.pairOutFlags, state.pair);
+    }
+  
+    function openModal(which) {
+      let modal;
+      if (which === "pair") {
+        modal = els.pairModal;
+      } else if (which === "tf") {
+        modal = els.tfModal;
+      } else if (which === "lang") {
+        modal = els.langModal;
+      }
+      
+      if (!modal) return;
+      
+      modal.classList.remove("is-hidden");
+      document.body.style.overflow = "hidden";
+  
+      // Небольшая задержка для правильной анимации
+      requestAnimationFrame(() => {
+        if (which === "pair") {
+          els.pairSearch.value = "";
+          renderPairList("");
+          setTimeout(() => els.pairSearch.focus(), 100);
+        } else if (which === "tf") {
+          renderTfList();
+        } else if (which === "lang") {
+          renderLangList();
+        }
+      });
+    }
+  
+    function closeModal(which) {
+      let modal;
+      if (which === "pair") {
+        modal = els.pairModal;
+      } else if (which === "tf") {
+        modal = els.tfModal;
+      } else if (which === "lang") {
+        modal = els.langModal;
+      }
+      
+      if (!modal) return;
+      
+      modal.classList.add("is-hidden");
+      document.body.style.overflow = "";
+      if (which === "pair") els.pairBtn.focus();
+      if (which === "tf") els.tfBtn.focus();
+      if (which === "lang") els.langBtn.focus();
+    }
+  
+    function renderPairList(filter) {
+      const q = (filter || "").trim().toUpperCase();
+      const list = PAIRS.filter((p) => p.toUpperCase().includes(q));
+      els.pairList.innerHTML = "";
+      
+      if (list.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "empty";
+        empty.style.padding = "40px 20px";
+        empty.style.textAlign = "center";
+        empty.style.color = "var(--muted2)";
+        empty.textContent = state.lang === "ru" ? "Ничего не найдено" : "No results found";
+        els.pairList.appendChild(empty);
+        return;
+      }
+      
+      list.forEach((pair, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "option" + (pair === state.pair ? " is-selected" : "");
+        btn.setAttribute("role", "option");
+        btn.setAttribute("aria-selected", String(pair === state.pair));
+        const flags = getPairFlags(pair);
+        const displayPair = formatPairDisplay(pair);
+        
+        btn.innerHTML = `
+          <span class="option__flags">
+            <img src="${flags.base}" alt="" class="option__flag" />
+            <img src="${flags.quote}" alt="" class="option__flag" />
+          </span>
+          <span class="option__main">
+            <span class="option__title">${escapeHtml(displayPair)}</span>
+          </span>
+          <span class="option__check" aria-hidden="true">${pair === state.pair ? "✓" : ""}</span>
+        `;
+        btn.addEventListener("click", () => {
+          state.pair = pair;
+          syncPairUI();
+          updateCooldownUI();
+          closeModal("pair");
+        });
+        els.pairList.appendChild(btn);
+        
+        // Анимация появления с задержкой
+        requestAnimationFrame(() => {
+          btn.style.opacity = "0";
+          btn.style.transform = "translateY(10px)";
+          btn.style.transition = "all .3s cubic-bezier(0.4, 0, 0.2, 1)";
+          
+          setTimeout(() => {
+            btn.style.opacity = "1";
+            btn.style.transform = "translateY(0)";
+          }, idx * 25);
+        });
+      });
+    }
+  
+    function renderLangList() {
+      els.langList.innerHTML = "";
+      LANGUAGES.forEach((lang, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "option" + (lang.code === state.lang ? " is-selected" : "");
+        btn.setAttribute("role", "option");
+        btn.setAttribute("aria-selected", String(lang.code === state.lang));
+        
+        btn.innerHTML = `
+          <span class="option__flags">
+            <img src="svg/${lang.flag}.svg" alt="" class="option__flag" />
+          </span>
+          <span class="option__main">
+            <span class="option__title">${escapeHtml(lang.name)}</span>
+          </span>
+          <span class="option__check" aria-hidden="true">${lang.code === state.lang ? "✓" : ""}</span>
+        `;
+        btn.addEventListener("click", () => {
+          setLang(lang.code);
+          closeModal("lang");
+        });
+        els.langList.appendChild(btn);
+        
+        // Анимация появления с задержкой
+        requestAnimationFrame(() => {
+          btn.style.opacity = "0";
+          btn.style.transform = "translateY(10px)";
+          btn.style.transition = "all .3s cubic-bezier(0.4, 0, 0.2, 1)";
+          
+          setTimeout(() => {
+            btn.style.opacity = "1";
+            btn.style.transform = "translateY(0)";
+          }, idx * 25);
+        });
+      });
+    }
+  
+    function renderTfList() {
+      els.tfList.innerHTML = "";
+      const timeframes = getTimeframes();
+      timeframes.forEach((tf, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "option" + (tf === state.tf ? " is-selected" : "");
+        btn.setAttribute("role", "option");
+        btn.setAttribute("aria-selected", String(tf === state.tf));
+        
+        // Определяем подпись для таймфрейма
+        let subtitle = "";
+        if (tf.includes("S")) {
+          subtitle = state.lang === "ru" ? "секунды" : "seconds";
+        } else if (tf.includes("M")) {
+          subtitle = state.lang === "ru" ? "минуты" : "minutes";
+        } else if (tf.includes("H")) {
+          subtitle = state.lang === "ru" ? "часы" : "hours";
+        } else if (tf.includes("D")) {
+          subtitle = state.lang === "ru" ? "дни" : "days";
+        }
+        
+        btn.innerHTML = `
+          <span class="option__main">
+            <span class="option__title">${escapeHtml(tf)}</span>
+            <span class="option__sub">${escapeHtml(subtitle)}</span>
+          </span>
+          <span class="option__check" aria-hidden="true">${tf === state.tf ? "✓" : ""}</span>
+        `;
+        btn.addEventListener("click", () => {
+          state.tf = tf;
+          els.tfValue.textContent = tf;
+          updateCooldownUI();
+          closeModal("tf");
+        });
+        els.tfList.appendChild(btn);
+        
+        // Анимация появления с задержкой
+        requestAnimationFrame(() => {
+          btn.style.opacity = "0";
+          btn.style.transform = "translateY(10px)";
+          btn.style.transition = "all .3s cubic-bezier(0.4, 0, 0.2, 1)";
+          
+          setTimeout(() => {
+            btn.style.opacity = "1";
+            btn.style.transform = "translateY(0)";
+          }, idx * 25);
+        });
+      });
+    }
+  
+    function generateSignal() {
+      // Добавляем текущее время в миллисекундах для большей случайности
+      const seed = hash(`${state.market}|${state.pair}|${state.tf}|${Date.now()}|${Math.random()}`);
+      const rnd = mulberry32(seed);
+      const side = rnd() > 0.5 ? "BUY" : "SELL";
+      const acc = Math.round(72 + rnd() * 23); // 72–95%
+      return { side, accuracy: acc };
+    }
+  
+    function showSignal() {
+      // Проверяем кулдаун
+      const remaining = getCooldownRemaining(state.pair, state.market);
+      if (remaining > 0) {
+        return; // Кулдаун еще активен
+      }
+  
+      // Добавляем loading состояние
+      els.getSignalBtn.classList.add("is-loading");
+      els.getSignalBtn.disabled = true;
+  
+      // Скрываем предыдущую карточку если есть
+      if (!els.signalCard.classList.contains("is-hidden")) {
+        els.signalCard.classList.add("is-hidden");
+      }
+      els.emptyState.style.display = "none";
+      els.loadingState.classList.remove("is-hidden");
+  
+      // Сбрасываем прогресс-бар в начало
+      els.loadingProgress.style.width = "0%";
+  
+      // Анимация прогресса и текста
+      let progress = 0;
+      const progressInterval = setInterval(() => {
+        progress += Math.random() * 8 + 3;
+        if (progress > 95) progress = 95;
+        els.loadingProgress.style.width = `${progress}%`;
+      }, 150);
+  
+      // Смена текста во время загрузки
+      const stages = [
+        { text: t("analyzing"), delay: 0 },
+        { text: t("calculating"), delay: 800 },
+        { text: t("finalizing"), delay: 1600 },
+      ];
+  
+      stages.forEach((stage) => {
+        setTimeout(() => {
+          els.loadingText.textContent = stage.text;
+        }, stage.delay);
+      });
+  
+      // Симуляция загрузки (2.5-3.5 секунды)
+      const delay = 2500 + Math.random() * 1000;
+  
+      setTimeout(() => {
+        clearInterval(progressInterval);
+        els.loadingProgress.style.width = "100%";
+  
+        setTimeout(() => {
+          const { side, accuracy } = generateSignal();
+  
+          els.pillMarketV.textContent = state.market;
+          els.pillAccuracyV.textContent = `${accuracy}%`;
+          syncPairUI();
+          els.tfOut.textContent = state.tf;
+  
+          const sideText = side === "BUY" ? t("buy") : t("sell");
+          els.signalV.textContent = sideText;
+          els.signalBadge.classList.toggle("signalBadge--buy", side === "BUY");
+          els.signalBadge.classList.toggle("signalBadge--sell", side === "SELL");
+  
+          // Показываем карточку с анимацией
+          els.loadingState.classList.add("is-hidden");
+          els.signalCard.classList.remove("is-hidden");
+  
+          // Устанавливаем кулдаун для этой пары
+          setCooldown(state.pair, state.market, state.tf);
+  
+          // Убираем loading
+          els.getSignalBtn.classList.remove("is-loading");
+          els.getSignalBtn.disabled = false;
+  
+          // Обновляем UI кнопки
+          updateCooldownUI();
+  
+          // Фокус на карточку для accessibility
+          els.signalCard.focus();
+        }, 200);
+      }, delay);
+    }
+  
+    // Функция для обновления UI кулдауна
+    function updateCooldownUI() {
+      const remaining = getCooldownRemaining(state.pair, state.market);
+      
+      if (remaining > 0) {
+        // Блокируем кнопку и показываем таймер
+        els.getSignalBtn.disabled = true;
+        els.getSignalBtn.classList.add("is-cooldown");
+        const timeText = formatTime(remaining);
+        els.getSignalText.textContent = `${t("wait")}: ${timeText}`;
+      } else {
+        // Разблокируем кнопку
+        els.getSignalBtn.disabled = false;
+        els.getSignalBtn.classList.remove("is-cooldown");
+        els.getSignalText.textContent = t("getSignal");
+      }
+    }
+  
+    // Запускаем обновление кулдауна каждую секунду
+    setInterval(() => {
+      updateCooldownUI();
+    }, 1000);
+  
+    function escapeHtml(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+  
+    function hash(str) {
+      // FNV-1a 32-bit
+      let h = 0x811c9dc5;
+      for (let i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = Math.imul(h, 0x01000193);
+      }
+      return h >>> 0;
+    }
+  
+    function mulberry32(a) {
+      return function () {
+        let t = (a += 0x6d2b79f5);
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      };
+    }
+  
+    // Events
+    els.langBtn.addEventListener("click", () => {
+      openModal("lang");
+    });
+  
+    els.marketForex.addEventListener("click", () => setMarket("Forex"));
+    els.marketOtc.addEventListener("click", () => setMarket("OTC"));
+  
+    els.pairBtn.addEventListener("click", () => openModal("pair"));
+    els.tfBtn.addEventListener("click", () => openModal("tf"));
+  
+    els.pairSearch.addEventListener("input", (e) => renderPairList(e.target.value));
+  
+    document.addEventListener("click", (e) => {
+      const target = e.target;
+      if (!(target instanceof HTMLElement)) return;
+      const close = target.getAttribute("data-close");
+      if (close === "pair" && !els.pairModal.classList.contains("is-hidden")) {
+        closeModal("pair");
+      }
+      if (close === "tf" && !els.tfModal.classList.contains("is-hidden")) {
+        closeModal("tf");
+      }
+      if (close === "lang" && !els.langModal.classList.contains("is-hidden")) {
+        closeModal("lang");
+      }
+    });
+  
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        if (!els.pairModal.classList.contains("is-hidden")) {
+          closeModal("pair");
+          e.preventDefault();
+        } else if (!els.tfModal.classList.contains("is-hidden")) {
+          closeModal("tf");
+          e.preventDefault();
+        } else if (!els.langModal.classList.contains("is-hidden")) {
+          closeModal("lang");
+          e.preventDefault();
+        }
+      }
+    });
+  
+    els.getSignalBtn.addEventListener("click", showSignal);
+  
+    // Init
+    setLang(state.lang);
+    setMarket(state.market);
+    syncPairUI();
+    els.tfValue.textContent = state.tf;
+    updateCooldownUI();
+  })();
+
+// Telegram WebApp initialization
+function initTelegramWebApp() {
+  if (window.Telegram && window.Telegram.WebApp) {
+    const tg = window.Telegram.WebApp;
+
+    // Уведомляем Telegram о готовности приложения
+    tg.ready();
+
+    // Растягиваем окно на всю доступную высоту
+    tg.expand();
+
+    // Запрашиваем полноэкранный режим
+    tg.requestFullscreen();
+
+    // Дополнительные настройки для лучшего отображения
+    tg.enableClosingConfirmation();
+
+    // Устанавливаем отступ для safe area (iPhone notch/Dynamic Island) + дополнительно 20px
+    const header = document.querySelector(".header");
+    if (header && tg.safeAreaInsets) {
+      const topInset = tg.safeAreaInsets.top || 0;
+      const additionalPadding = 20;
+      header.style.paddingTop = `${topInset + additionalPadding}px`;
+    }
+  }
+}
+
+// Инициализируем при загрузке страницы
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initTelegramWebApp);
+} else {
+  // Если страница уже загружена, пробуем сразу
+  initTelegramWebApp();
+  // Также пробуем через небольшую задержку на случай, если скрипт Telegram еще загружается
+  setTimeout(initTelegramWebApp, 100);
+}
